@@ -1,0 +1,232 @@
+```VILLAIN
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENIOR GIRL - Exclusive Content Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        darkRed: {
+                            600: '#991b1b',
+                            700: '#7f1d1d',
+                            800: '#581c87',
+                            900: '#450a0a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #09090b;
+            color: #f4f4f5;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(127, 29, 29, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(220, 38, 38, 0.1) 0%, transparent 40%);
+            min-height: 100vh;
+        }
+        .glass-panel {
+            background: rgba(24, 24, 27, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-red {
+            box-shadow: 0 0 25px rgba(220, 38, 38, 0.35);
+        }
+        .glow-red-active {
+            box-shadow: 0 0 35px rgba(239, 68, 68, 0.6);
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-600/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <main class="relative z-10 w-full max-w-md mx-auto">
+        
+        <div class="text-center mb-8">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-800/50 text-red-400 text-xs font-semibold tracking-wider uppercase mb-4 shadow-sm animate-pulse-slow">
+                <i class="fa-solid fa-shield-halved"></i> Secure Verification Gateway
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-2">
+                SENIOR <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-600">GIRL</span>
+            </h1>
+            <p class="text-zinc-400 text-sm sm:text-base">
+                Complete all 3 steps below to unlock your exclusive content instantly.
+            </p>
+        </div>
+
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl glow-red border border-white/10">
+            
+            <div class="mb-6">
+                <div class="flex justify-between items-center text-xs font-semibold text-zinc-400 mb-2">
+                    <span>PROGRESS</span>
+                    <span id="progress-text">0 / 3 Completed</span>
+                </div>
+                <div class="w-full bg-zinc-800 rounded-full h-2.5 overflow-hidden">
+                    <div id="progress-bar" class="bg-gradient-to-r from-red-600 to-rose-500 h-2.5 rounded-full transition-all duration-500" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="space-y-3 mb-8">
+                
+                <!-- Step 1: Telegram 1 -->
+                <div id="card-1" class="group flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300 gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-red-950/50 border border-red-800/40 flex items-center justify-center text-red-500 font-bold text-lg shrink-0">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-bold text-white">Join Telegram Channel 1</h2>
+                            <p class="text-xs text-zinc-400">@STRIKXRE</p>
+                        </div>
+                    </div>
+                    <button onclick="verifyStep(1, 'https://t.me/STRIKXRE')" id="btn-1" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-zinc-800 hover:bg-red-600 text-zinc-200 hover:text-white text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 border border-zinc-700 hover:border-red-500 shadow-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Join Now</span>
+                    </button>
+                </div>
+
+                <!-- Step 2: Telegram 2 (Updated Link) -->
+                <div id="card-2" class="group flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300 gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-red-950/50 border border-red-800/40 flex items-center justify-center text-red-500 font-bold text-lg shrink-0">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-bold text-white">Join Telegram Channel 2</h2>
+                            <p class="text-xs text-zinc-400">Exclusive Group Link</p>
+                        </div>
+                    </div>
+                    <button onclick="verifyStep(2, 'https://t.me/+hFO7JXtvapVlZGM1')" id="btn-2" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-zinc-800 hover:bg-red-600 text-zinc-200 hover:text-white text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 border border-zinc-700 hover:border-red-500 shadow-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Join Now</span>
+                    </button>
+                </div>
+
+                <!-- Step 3: YouTube Channel -->
+                <div id="card-3" class="group flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-zinc-800/80 hover:border-red-500/40 transition-all duration-300 gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-red-950/50 border border-red-800/40 flex items-center justify-center text-red-500 font-bold text-lg shrink-0">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-sm font-bold text-white">Subscribe to YouTube</h2>
+                            <p class="text-xs text-zinc-400">@annuliv209</p>
+                        </div>
+                    </div>
+                    <button onclick="verifyStep(3, 'https://www.youtube.com/@annuliv209')" id="btn-3" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-zinc-800 hover:bg-red-600 text-zinc-200 hover:text-white text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 border border-zinc-700 hover:border-red-500 shadow-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Subscribe</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <button id="unlock-btn" onclick="openUnlockedLink()" disabled class="w-full py-4 rounded-2xl font-extrabold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-3 bg-zinc-800 text-zinc-500 cursor-not-allowed border border-zinc-700/50">
+                <i id="unlock-icon" class="fa-solid fa-lock text-zinc-500"></i>
+                <span id="unlock-text">Complete All 3 Steps to Unlock</span>
+            </button>
+
+        </div>
+
+        <p class="text-center text-xs text-zinc-500 mt-6">
+            Protected by Senior Girl Security &bull; Powered by Instant Verification
+        </p>
+
+    </main>
+
+    <script>
+        const state = {
+            step1: false,
+            step2: false,
+            step3: false
+        };
+
+        const targetDestination = "https://t.me/+hFO7JXtvapVlZGM1";
+
+        function verifyStep(stepId, url) {
+            window.open(url, '_blank');
+
+            const btn = document.getElementById(`btn-${stepId}`);
+            const card = document.getElementById(`card-${stepId}`);
+
+            if (state[`step${stepId}`]) return;
+
+            btn.disabled = true;
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i><span>Verifying...</span>`;
+            btn.className = "w-full sm:w-auto px-4 py-2 rounded-xl bg-amber-600/30 text-amber-300 text-xs font-bold border border-amber-600/50 cursor-wait flex items-center justify-center gap-2";
+
+            setTimeout(() => {
+                state[`step${stepId}`] = true;
+
+                btn.innerHTML = `<i class="fa-solid fa-check"></i><span>Verified ✓</span>`;
+                btn.className = "w-full sm:w-auto px-4 py-2 rounded-xl bg-emerald-600/20 text-emerald-400 text-xs font-bold border border-emerald-600/40 flex items-center justify-center gap-2";
+                
+                card.className = "group flex flex-col sm:flex-row items-start sm:items-center justify-between p-3.5 rounded-2xl bg-zinc-900/80 border border-emerald-500/40 transition-all duration-300 gap-3";
+
+                updateProgress();
+            }, 3000);
+        }
+
+        function updateProgress() {
+            let completedCount = 0;
+            if (state.step1) completedCount++;
+            if (state.step2) completedCount++;
+            if (state.step3) completedCount++;
+
+            const progressText = document.getElementById('progress-text');
+            const progressBar = document.getElementById('progress-bar');
+            
+            progressText.innerText = `${completedCount} / 3 Completed`;
+            progressBar.style.width = `${(completedCount / 3) * 100}%`;
+
+            if (completedCount === 3) {
+                unlockFinalButton();
+            }
+        }
+
+        function unlockFinalButton() {
+            const unlockBtn = document.getElementById('unlock-btn');
+            const unlockIcon = document.getElementById('unlock-icon');
+            const unlockText = document.getElementById('unlock-text');
+
+            unlockBtn.disabled = false;
+            unlockBtn.className = "w-full py-4 rounded-2xl font-extrabold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-3 bg-gradient-to-r from-red-600 to-rose-600 text-white hover:from-red-500 hover:to-rose-500 cursor-pointer glow-red-active shadow-lg shadow-red-900/40 border border-red-500/50 animate-bounce";
+            
+            unlockIcon.className = "fa-solid fa-lock-open text-white";
+            unlockText.innerText = "Click Here to Access Final Link!";
+        }
+
+        function openUnlockedLink() {
+            if (state.step1 && state.step2 && state.step3) {
+                window.open(targetDestination, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
+```
